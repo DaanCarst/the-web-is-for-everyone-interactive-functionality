@@ -1,0 +1,27 @@
+<%- include('./partials/head') %>
+
+<main>
+  <h1>Toolboard</h1>
+  <h2></h2>
+  <% principes.forEach(principe => { %>
+    <article class="toolboard">
+      <section class="principals">
+        <h2><%= principe.titel %></h2>
+        <p><%- principe.beschrijving.html %></p>
+      </section>
+      <section class="guidelines">
+        <details>
+            <summary>
+            </summary>         
+            <% principe.richtlijnen.forEach(richtlijn => { %>
+              <h3><%- richtlijn.titel %></h3>
+                <div class="info" id="<%= richtlijn.titel.toLowerCase() %>"><%- richtlijn.uitleg.html %></div>
+            <% }) %>
+        </details>
+      </section>
+    </article>
+    <% }) %>
+</main>
+<script src="./scripts/script.js"></script>
+
+<%- include('./partials/foot') %>

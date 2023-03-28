@@ -165,3 +165,8 @@ h3 {
     background-color: var(--main-pink);
     border-color: var(--main-pink);
 }
+
+.partner-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}

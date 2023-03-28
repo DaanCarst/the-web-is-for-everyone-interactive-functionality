@@ -5,7 +5,16 @@
   <p class="partners-uitleg">Bekijk alle partners en hun websites en controleer via onze checklist of zij voldoen aan de wcag richtlijnen. <br> Vanaf 2025 moet iedere website digitaal toegankelijk zijn.</p>
   <a href=""><button class="add-button">Voeg een link toe.</button></a>
 
-  
+  <section class="partner-container">
+    <% url_data.urls.forEach(url=> { %>
+      <div class="card">
+          <div>
+              <h4><%= url.website.titel %></h4>
+              <a href="<%= url.url %>" class="url" target="_blank"><%= url.url %></a>
+          </div>
+      </div>
+      <%})%>
+  </section>
 </main>
 
 <script src="./scripts/script.js"></script>

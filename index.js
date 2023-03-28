@@ -25,9 +25,18 @@ app.get('/contact', function (req, res) {
   res.render('contact')
 })
 
-app.get('/partner', function (req, res) {
+app.get('/partner', (request, response) => {
+  let id = request.query.websiteId
+  let partnerUrl = 'https://api.vervoerregio-amsterdam.fdnd.nl/api/v1/urls?websiteId=' + id + '&first=100'
+  
+  fetchJson(partnerUrl).then((partnerData) => {
+    response.render('partners', partnerData)
+  })
+})
+
+app.get('/form', function (req, res) {
   // res.send('Hello World!')
-  res.render('partners')
+  res.render('form')
 })
 
 // Stel het poortnummer in waar express op gaat luisteren

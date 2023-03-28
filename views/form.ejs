@@ -1,26 +1,24 @@
 <%- include('./partials/head') %>
-
 <% if (typeof(newdata) != 'undefined') { %>
-  Er ging iets mis hoor, sorry. <%= newdata.error %>
-  <% } %>
-  
-  <div class="form__container">
-      <form method="post" action="/form">
-          <h2>Partner formulier</h2>
-          <p>Voeg een website toe van een partner om te checken.</p>
-          <label for="name">Naam van partner <span>(verplicht)</span></label>
-          <select id="name" name="websiteId">
-              <% website_data.websites.forEach(website=> { %>
-              <option value="<%= website.id  %>"><%= website.titel %></option>
-              <%})%>
-          </select>
-      
-          <label for="name">URL van website <span>(verplicht)</span></label>
-          <input id="name" type="url" required name="url">
-      
-          <input type="submit" />
-      </form>
-  </div>
+Er ging iets mis hoor, sorry. <%= newdata.error %>
+<% } %>
 
-<script src="./scripts/script.js"></script>
+<div class="form__container">
+    <form method="post" action="/form">
+        <h2>Partner formulier</h2>
+        <p>Voeg een website toe van een partner om te checken.</p>
+        <label for="name">Naam van partner <span>(verplicht)</span></label>
+        <select id="name" name="websiteId">
+            <% website_data.websites.forEach(website=> { %>
+            <option value="<%= website.id  %>"><%= website.titel %></option>
+            <%})%>
+        </select>
+    
+        <label for="name">URL van website <span>(verplicht)</span></label>
+        <input id="name" type="url" required name="url">
+    
+        <input type="submit" />
+    </form>
+</div>
+
 <%- include('./partials/foot') %>

@@ -25,6 +25,11 @@ app.get('/contact', function (req, res) {
   res.render('contact')
 })
 
+app.get('/partner', function (req, res) {
+  // res.send('Hello World!')
+  res.render('partners')
+})
+
 // Stel het poortnummer in waar express op gaat luisteren
 app.set('port', process.env.PORT || 8000)
 

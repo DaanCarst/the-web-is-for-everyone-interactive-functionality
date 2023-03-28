@@ -116,7 +116,7 @@ main {
     border-radius: 20px;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     padding: 1em;
 }
@@ -143,4 +143,25 @@ h3 {
 
 .info {
     padding: 1em;
+}
+
+.partners-uitleg {
+    margin-top: .5em;
+}
+
+.add-button {
+    background-color: var(--main-fade);
+    border: 2px solid var(--main-fade);
+    font-size: 1rem;
+    padding: .5em;
+    margin-top: 1em;
+    cursor: pointer;
+    border-radius: 50px;
+    outline: none;
+    color: #fff;
+}
+
+.add-button:hover {
+    background-color: var(--main-pink);
+    border-color: var(--main-pink);
 }

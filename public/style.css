@@ -169,13 +169,84 @@ h3 {
 .partner-container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    padding: 1em;
+    padding: .5em;
 }
 
 .card {
-    border-radius: 20px;
-    background-color: rgb(220, 220, 220);
+    border-radius: 15px;
+    background-color: white;
     padding: .5em;
     margin: 1em; 
-    border: 2px solid var(--main-fade)
+    box-shadow: black 10px 10px;
+    box-shadow: 10px 10px 8px #888888;
+    margin-left: -.5em;
 }
+
+/* .partners-head, .add-button {
+    padding: .5em;
+} */
+
+.form__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100vw;
+    height: calc(100vh - 5em);
+  }
+  
+  .form__container p {
+    font-size: .9em;
+    color: black;
+    font-family: var(--textFont);
+    margin-bottom: 10px;
+  }
+  
+  .flex-column {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 80% 20%;
+    gap: 2em;
+  }
+  
+  form {
+    color: black;
+    margin: auto;
+    /* margin-top: 13em; */
+    border: 2px solid var(--main-pink);
+    border-radius: 1em;
+    padding: 1em;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label,
+  form label span {
+    font-family: var(--textFont);
+    /* margin-top: 5px; */
+  }
+  
+  input[type=text],
+  input[type=url],
+  select {
+    width: 100%;
+    padding: 12px 5px;
+    color: black;
+    font-family: var(--mainFont);
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid var(--main-pink);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    font-size: 1.1em;
+    padding: 0.5em 1.5em;
+    border-radius: .7em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--main-pink);
+  }

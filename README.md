@@ -1,6 +1,6 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Server Side rendering | Vervoerregio
+# The web is for everyone | Vervoerregio
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 
 ## Inhoudsopgave
@@ -21,6 +21,8 @@ Tijdens deze opdracht was het de bedoeling om een website te maken met inhoud va
 * Javascript
 * Rest API
 * EJS
+
+Met progressive enhancement zorg je ervoor dat bepaalde dingen wat met javascript te maken heeft niet de hele website breekt als javascript uit staat. Dit heb ik op 1 punt vooral toegevoegd. Op mijn toolboard pagina heb ik een dropdown menu wat eerst werkte met javascript, die heb ik aangepast en werkt nu met een functie van HTML zelf.
 
 ## Gebruik
 

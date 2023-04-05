@@ -8,7 +8,7 @@ const websiteSlug = '/websites'
 
 const url = baseURL + checklistSlug
 
-const url_data = await fetch(baseURL + urlSlug + '?first=300'). then((response) => response.json())
+const url_data = await fetch(baseURL + urlSlug + '?first=100'). then((response) => response.json())
 const website_data = await fetch(baseURL + websiteSlug). then((response) => response.json())
 const data = await fetch(url). then((response) => response.json())
 

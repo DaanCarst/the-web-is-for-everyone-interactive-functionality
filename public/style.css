@@ -168,5 +168,14 @@ h3 {
 
 .partner-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
+    padding: 1em;
+}
+
+.card {
+    border-radius: 20px;
+    background-color: rgb(220, 220, 220);
+    padding: .5em;
+    margin: 1em; 
+    border: 2px solid var(--main-fade)
 }

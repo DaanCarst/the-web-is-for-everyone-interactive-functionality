@@ -22,7 +22,9 @@ Tijdens deze opdracht was het de bedoeling om een website te maken met inhoud va
 * Rest API
 * EJS
 
-Met progressive enhancement zorg je ervoor dat bepaalde dingen wat met javascript te maken heeft niet de hele website breekt als javascript uit staat. Dit heb ik op 1 punt vooral toegevoegd. Op mijn toolboard pagina heb ik een dropdown menu wat eerst werkte met javascript, die heb ik aangepast en werkt nu met een functie van HTML zelf.
+
+### progressive enhancement
+Als eerst heb ik ervoor gezorgd dat de dropdown werkt met puur HTML, toen dit werkte heb ik het gestyled en daarna met javascript ervoor gezorgd dat er maar 1 open kan staan. Dit zorgt ervoor dat als de javascript weg valt dat het enige wat veranderd het menu is dat er niet maar 1 tegelijk open kan staan.
 
 ## Gebruik
 

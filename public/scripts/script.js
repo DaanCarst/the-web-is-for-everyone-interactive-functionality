@@ -9,5 +9,11 @@ details.forEach((targetDetail) => {
         detail.removeAttribute("open");
       }
     });
+    current.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
   });
 });
+
+function scrollFunction() {
+  const element = document.getElementById("info");
+  element.scrollIntoView({behavior: "smooth"});
+}

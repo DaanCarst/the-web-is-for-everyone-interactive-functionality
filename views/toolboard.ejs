@@ -10,12 +10,12 @@
         <p><%- principe.beschrijving.html %></p>
       </section>
       <section class="guidelines">
-        <details>
+        <details onclick="scrollFunction()">
             <summary>
             </summary>         
             <% principe.richtlijnen.forEach(richtlijn => { %>
               <h3><%- richtlijn.titel %></h3>
-                <div class="info" id="<%= richtlijn.titel.toLowerCase() %>"><%- richtlijn.uitleg.html %></div>
+                <div id="info" class="info" id="<%= richtlijn.titel.toLowerCase() %>"><%- richtlijn.uitleg.html %></div>
             <% }) %>
         </details>
       </section>

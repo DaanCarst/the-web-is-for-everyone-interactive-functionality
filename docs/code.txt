@@ -1,0 +1,3 @@
+<% website.urls.forEach(urls=> { %>
+   <p> <%- urls.url %></p>
+<%})%> 
